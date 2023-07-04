@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200;400;500&display=swap');
+:root {
+    margin: 0px;
+    padding: 0px;
+}
+::-webkit-scrollbar {
+    width: 0;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    margin:0px;
+}
+.hr {
+    text-decoration: none;
+    color:  #ffffff;;
+}
+.nav {
+    display: flex;
+    background-color: #5d00ff;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+}
+.nav_list{
+    display: flex;
+    padding: 0px;
+    column-gap:26;
+    flex-wrap: wrap;
+    width:max-content;
+}
+.logo{
+    position: absolute;
+    left: 0;
+    display:inline-block;
+    z-index: 2;
+    margin-left: 29px;
+    color: #ffffff;
+
+}
+.exit{
+    position: absolute;
+    right: 0;
+    background-color: #5d00ff;
+    background-image:url('exit.png');
+    background-repeat: no-repeat;
+    border:none;
+    display:inline-block;
+    z-index: 2;
+    width: 33px;
+    height: 26px;
+    padding-right: 35px;
+}
+.nav_list .btn{
+    margin-right: 2rem;
+    background-color: #5d00ff;
+    border:none;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.btn:hover{
+    text-decoration:underline;
+}
+.username{
+    color: #FFFFFF;
+    position: absolute;
+    right: 61px; 
+}
+.create{
+    width: 215px;
+    height: 58px;
+    border: 3px solid #D9D9D9;
+    border-radius: 12px;
+    background: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.075em;
+    color: #8E8D8D;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+.create:hover{
+    border: 3px solid #5d00ff;
+    color: #5d00ff;
+}
+
+
+/* Всплывающая форма – по умолчанию скрыта */
+.form-popup {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid #D9D9D9;
+    border-radius: 15px;
+    z-index: 9;
+  }
+  
+  /* Стили контейнера формы */
+  .form-container {
+    width: 500px;
+    max-height: fit-content;
+    padding: 0px;
+    background-color: white;
+  }
+  
+  .namediv{
+    padding: 15px;
+    display: flex;
+    width: 95%;
+    justify-content: center;
+    align-items: center;
+  }
+  .naz{
+    display: flex;
+    width: 70%;
+    padding: 10px;
+    margin: 0;
+    border: solid 2px;
+    border-color: #D9D9D9;
+    border-radius: 5px;
+    background: #ffffff;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    color: #5d00ff;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.075em;
+    
+
+  }
+  .choisef{
+    width: 85px;
+    height: 29px;
+    background: #FFFFFF;
+    border: 4px solid #D9D9D9;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.075em;
+    color: #8E8D8D;
+    margin-left: 20px;
+}
+.choisef option{
+    width: 85px;
+    height: 29px;
+    background: #FFFFFF;
+    border: 2.5px solid #D9D9D9;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 16px;
+    color: #5d00ff;
+    margin-left: 20px;
+}
+.desc{
+    display: flex;
+    flex-flow: column wrap;
+    margin-left: 20px;
+    padding-top: 10px;
+    width: 460px;
+}
+.desc label{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.075em;
+    color: #8D8D8D;
+}
+.desc textarea{
+    height: 60px;
+    background: #FFFFFF;
+    border:  4px solid #D9D9D9;
+    border-radius: 12px;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 16px;
+    color: #5d00ff;
+    resize: none;
+}
+.desc textarea::after{
+    
+}
+.but{
+    display: flex;
+    float: right;
+    margin: 0px;
+    gap:10px;
+    height: 30px;
+    margin: 10px;
+    background-color: #ffffff;
+    z-index: 3;
+}
+.but .btn{
+    border: 1px solid #5d00ff;
+    border-radius: 6px;
+    background: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #5d00ff;
+    text-decoration: none;
+}
+.but .btn_cancel{
+    border: 1px solid #AAA9A9;
+    border-radius: 6px;
+    background: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #AAA9A9;
+    text-decoration: none;
+}
+.c_list{
+    width: 110vh;
+    margin-top: 30px;
+    padding-left: 10px;
+    
+}
+.c_list p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 47px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.075em;
+    color: #1E1E1E;
+    
+}
+
+.c_list p:hover{
+    text-decoration: underline;
+}
+
+.pro {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 20px;
+    gap: 15px;
+    font-size: 36px;
+ }
+
+.content_t{
+    color: #8D8D8D;
+ }
+ .conteiner{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 20px;
+    gap: 15px;
+    height: 100vh;
+    
+ }
+ .elem{
+    display:block;
+    margin: 10px;
+    gap: 5px;
+    border: solid 2px #AAA9A9;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+.sp{
+    margin-right: 15px;
+}
+ 
